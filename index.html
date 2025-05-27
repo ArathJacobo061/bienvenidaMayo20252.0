@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> convertidor de metros a kilometros</title>
+        <title>ejemplo de cadenas</title>
     </head>
     <body>
-        <h1> ejemplo de variable</h1>
-        <h2>convertidor de metros a kilometros</h2>
-        <label>ingrese el numero a convertir en metros</label>
-        <input type="text" name="metros"id="cajaMetros"></input>
-        <br><br>
-        <button type="button"onclick="convertirMetrosKilometros();">convertidor</button>
-        <script src="codigo.js"></script>
-        <br><br>
-        <label>el resultado en kilometros es:</label>
-        <input type="text" name="kilometros" id="cajaKilometros" disabled></body>/
+        <h1>ejemplo de cadenas</h1>
+        <h2>captura de nuevo cliente</h2>
+        <label for="cajaNombre">ingrese el nombre del cliente</label>
+        <input type="text"name="nombre"id="cajaNombre"></input>
+        <br>
+        <br>
+        <label for="cajaApellidoPaterno">ingrese el apellido paterno del cliente</label>
+        <input type="text"name="apellidoPaterno"id="cajaApellidoPaterno"></input>
+        <br>
+        <br>
+        <label for="cajaApellidoMaterno">ingrese el apellido materno del cliente</label>
+        <input type="text"name="apellidoMaterno"id="cajaApellidoMaterno"></input>
+        <br>
+        <br>
+        <button type="button" onclick="concantenarCadena();" >generar nombre completo</button>
+        <script src="cadena.js"></script>
+        <br>
+        <br>
+        <label>el nombre completo es:</label>\
+        <input type="text"name="nombreClompleto"id="cajaNombreCompleto"disabled>
+
+        <h1>Programa para Calcular Longitud</h1>
+
+        <label for="cajaTexto">calcular longitud y convertir mayusculas y minusculas:</label><br>
+        <input type="text" name="longitudTexto" id="cajaTexto"><br><br>
+
+        <button onclick="calcularLongitud()">Calcular longitud</button>
+        <button onclick="convertirMayusculas()">Convertir a MAYÚSCULAS</button>
+        <button onclick="convertirMinusculas()">Convertir a minúsculas</button><br><br>
+
+        <label>Resultado:</label><br>
+        <input type="text" id="resultado" disabled>
+        <br> 
+        <br>
+           <h1>Formateo de Fecha</h1>
+
+    <label for="cajaDia">Ingrese el día:</label><br>
+    <input type="text" id="cajaDia" name="dia"><br><br>
+
+    <label for="cajaMes">Ingrese el mes:</label><br>
+    <input type="text" id="cajaMes" name="mes"><br><br>
+
+    <label for="cajaAnio">Ingrese el año:</label><br>
+    <input type="text" id="cajaAnio" name="anio"><br><br>
+
+    <button onclick="convertirFormato()">Convertir formato</button><br><br>
+
+    <label>Resultado:</label><br>
+    <input type="text" id="cajaResultado" disabled><br><br>
     </body>
 </html>
